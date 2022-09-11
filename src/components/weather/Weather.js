@@ -1,11 +1,11 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import WeatherContext from "../../context/WeatherContext";
 import "./Weather.css";
 import { WiCloud } from "react-icons/wi";
 import Forecast from "../forecast/Forecast";
 
 function Weather() {
-  const { weather, setWeather } = useContext(WeatherContext);
+  const { weather } = useContext(WeatherContext);
 
   if (weather) {
     let sset = weather.sunset.split(":");

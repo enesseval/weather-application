@@ -5,9 +5,8 @@ import WeatherContext from "../../context/WeatherContext";
 import "./ForecastADay.css";
 
 function ForecastADay() {
-  const { day, setDay } = useContext(DayContext);
-  const { forecast, setForecast } = useContext(WeatherContext);
-  console.log(forecast[day - 1]);
+  const { day } = useContext(DayContext);
+  const { forecast } = useContext(WeatherContext);
   if (day) {
     return (
       <div className="forecastADay">

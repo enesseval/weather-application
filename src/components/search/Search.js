@@ -4,7 +4,7 @@ import { AsyncPaginate } from "react-select-async-paginate";
 import SearchContext from "../../context/SearchContext";
 
 function Search() {
-  const { city, setCity } = useContext(SearchContext);
+  const { setCity } = useContext(SearchContext);
 
   const ayar = {
     method: "GET",

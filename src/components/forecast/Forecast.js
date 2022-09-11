@@ -1,6 +1,4 @@
 import React from "react";
-import { useState } from "react";
-import { createContext } from "react";
 import { useContext } from "react";
 import DayContext from "../../context/DayContext";
 import WeatherContext from "../../context/WeatherContext";
@@ -18,7 +16,7 @@ const days = [
 ];
 
 function Forecast() {
-  const { forecast, setForecast } = useContext(WeatherContext);
+  const { forecast } = useContext(WeatherContext);
   const { day, setDay } = useContext(DayContext);
 
   const dayInAWeek = new Date().getDay();

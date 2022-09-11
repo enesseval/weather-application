@@ -3,7 +3,6 @@ import "./App.css";
 import { SearchContextProvider } from "./context/SearchContext";
 import { WeatherContextProvider } from "./context/WeatherContext";
 import Weather from "./components/weather/Weather";
-import Forecast from "./components/forecast/Forecast";
 import { DayContextProvider } from "./context/DayContext";
 
 function App() {

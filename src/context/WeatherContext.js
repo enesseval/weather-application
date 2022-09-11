@@ -10,7 +10,7 @@ export const WeatherContextProvider = ({ children }) => {
   const [forecast, setForecast] = useState();
 
   const values = { weather, setWeather, forecast, setForecast };
-  const { city, setCity } = useContext(SearchContext);
+  const { city } = useContext(SearchContext);
 
   useEffect(() => {
     if (city) {
